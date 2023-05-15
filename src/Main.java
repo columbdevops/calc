@@ -9,14 +9,13 @@ class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите арифметическое выражение: ");
-        while(true) {
-            String stringInput = scanner.nextLine();
-            if (stringInput != "") {
-                String result = calc(stringInput);
-                System.out.println("Результат: " + result);
-            } else {
-                System.out.println("Вы ничего не ввели!");
-            }
+
+        String stringInput = scanner.nextLine();
+        if (stringInput != "") {
+            String result = calc(stringInput);
+            System.out.println("Результат: " + result);
+        } else {
+            System.out.println("Вы ничего не ввели!");
         }
     }
 
