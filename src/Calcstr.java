@@ -7,7 +7,7 @@ public class Calcstr {
             Scanner scanner = new Scanner(System.in);
             String stringInput = scanner.nextLine();
             ResMeth resMeth = new ResMeth();
-            System.out.println(resMeth.resultMeth(stringInput));
+            System.out.println("\"" + resMeth.resultMeth(stringInput) + "\"");
         }
     }
 }
